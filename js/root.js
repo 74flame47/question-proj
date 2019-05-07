@@ -84,6 +84,24 @@ let database = [
 
 let timeline = [];
 
+let user = prompt("Welcome! Please enter your user name.");
+let userPass = prompt("Awesome! Lastly enter your password for that account.");
+
+const signIn = (user, userPass) => {
+
+    for(let x = 0; x < database.length; x++){
+        if(user === database.userName && userPass === database.password){
+            alert("Welcome back " + user);
+            let message = prompt("What would you like to say to your fans?")
+            timeline.push(message)
+            console.log(timeline)
+        }else{
+            alert("Something went wrong...are you sure you're one of us?")
+        }
+    }  
+}
+
+signIn(user, userPass)
 
 
 
