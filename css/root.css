@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+#main-container{
+    width: 100%;
+    min-height: 670px;
+    height: 100%;
+    background-image: url("/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: 3s;
+}
+
+
+
+
+#content-container{
+    max-width: 1200px;
+    min-height: 670px;
+    margin: 0px auto;
+    position: relative;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+/*=======================Copy Section===========================*/
+
+
+
+
+#copy-container{
+    width: 500px;
+    height:500px;
+    position: absolute;
+    /*border: 1px solid #ffffff;*/
+    color: #ffffff;
+    top: 20%;
+    left: 5%;
+}
+
+#copy-container img{
+    max-width: 340px;
+    margin: 0px auto;
+    display: block;
+    /*border: 1px solid #ffffff;*/
+}
+#copy-container h1{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    /*border: 1px solid #ffffff;*/
+    margin: 20px 0px 0px 0px;
+}
+#copy-container p{
+    font-family: "Tajawal", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    /*border: 2px solid #0cdd63;*/
+    margin: -20px 0px 0px 0px;
+    text-align: right;
+    padding-right:20px;
+    letter-spacing: 3px;
+}
+
+/*=======================Copy Section END===========================*/
+
+
+
+
+
+
+
+
+/*=======================Questions Section===========================*/
+
+#questions-container{
+    min-width: 300px;
+    width:40%;
+    max-width: 500px;
+    min-height: 500px;
+    margin:0px;
+    padding:27px 27px 47px 27px;
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .4);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+#questions-container h3{
+    text-align: right;
+    margin: 0px;
+    padding: 0px 20px 0px 0px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 60px;
+    font-weight: 100 !important;
+    /*border: 2px solid #0cdd63;*/
+}
+
+#questions-container h4{
+    text-align: center;
+    margin: 0px;
+    padding: 30px 0px 10px 0px;
+    font-size: 23px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    /*border: 2px solid #0cdd63;*/
+}
+
+
+.select-btn{
+    max-width:360px;
+    height: 50px;
+    margin: 16px auto;
+    padding: 0px;
+    border-radius: 70px;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .45s; /*This simple transition effect made a
+    complete differenc in everything. It smooths everything out!!!*/
+}
+.option{
+    width:50px;
+    height: 50px;
+    text-align: center;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 900 !important;
+    font-size: 20px;
+    padding-top: 13px;
+    margin: 0px;
+    position: absolute;
+    transition: .45s;
+}
+
+.select-btn p{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    padding-top: 13px;
+    margin: 0px;
+    position: relative;
+    transition: .45s;
+}
+
+
+
+
+
+.select-btn:hover{
+    box-shadow:0px 0px 20px 1px #02b294;
+    max-width:370px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.select-btn p:hover{
+    color: #ffb70b;
+    font-size: 22px;
+}
+
+.option:hover{
+    color: #ffb70b;
+    font-size: 22px;
+}
+/*=======================Questions Section END===========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
