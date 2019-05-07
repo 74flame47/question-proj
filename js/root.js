@@ -1,6 +1,6 @@
 //alert("You're all set to run!");
 
-
+/**
 
 const btnChange = () => {
     let choice0 = document.getElementById("choice0");
@@ -37,7 +37,7 @@ console.log("You are gaining power Barry! You are building the strength to achei
 
 
 
-/**
+
  
 let database = [
     {
@@ -88,20 +88,19 @@ let user = prompt("Welcome! Please enter your user name.");
 let userPass = prompt("Awesome! Lastly enter your password for that account.");
 
 const signIn = (user, userPass) => {
-
     for(let x = 0; x < database.length; x++){
-        if(user === database.userName && userPass === database.password){
+        if(user === database[x].userName && userPass === database[x].password){
             alert("Welcome back " + user);
-            let message = prompt("What would you like to say to your fans?")
-            timeline.push(message)
-            console.log(timeline)
+            let message = prompt("What would you like to say to your fans?");
+            timeline.push(message);
+            console.log(timeline);
         }else{
-            alert("Something went wrong...are you sure you're one of us?")
+            //alert("Something went wrong...are you sure you're one of us?");
         }
     }  
 }
 
-signIn(user, userPass)
+signIn(user, userPass);
 
 
 
