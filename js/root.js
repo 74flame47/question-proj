@@ -84,8 +84,8 @@ let database = [
 
 let timeline = [];
 
-let user = prompt("Welcome! Please enter your user name.");
-let userPass = prompt("Awesome! Lastly enter your password for that account.");
+let userprompt = prompt("Welcome! Please enter your user name.");
+let userPassprompt = prompt("Awesome! Lastly enter your password for that account.");
 
 const signIn = (user, userPass) => {
     for(let x = 0; x < database.length; x++){
@@ -100,7 +100,7 @@ const signIn = (user, userPass) => {
     }  
 }
 
-signIn(user, userPass);
+signIn(userprompt, userPassprompt);
 
 
 
