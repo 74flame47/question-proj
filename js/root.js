@@ -62,6 +62,11 @@ let newsfeed = [
 //Create prompts that receives users information: name and password
 //I want the database to store the information that was added. So I can't use prompt. Use prompt for now then change it in the future.
 
+
+
+
+
+//This stores the user information. If they are apart of the site, then they will be here
 let database = [
     {
         userName: "personA",
@@ -81,12 +86,16 @@ let database = [
     },
 ];
 
-
+//This is where the user messages are stored
 let timeline = [];
 
+
+//This is the prompt that allows the user to give their information.
 let userprompt = prompt("Welcome! Please enter your user name.");
 let userPassprompt = prompt("Awesome! Lastly enter your password for that account.");
 
+
+//This is the actual function that will determine what to do with information.
 const signIn = (user, userPass) => {
     for(let x = 0; x < database.length; x++){
         if(user === database[x].userName && userPass === database[x].password){
