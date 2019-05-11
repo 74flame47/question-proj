@@ -98,7 +98,7 @@ let userPassprompt = prompt("Awesome! Lastly enter your password for that accoun
 //This is the actual function that will determine what to do with information.
 const signIn = (user, userPass) => {
     for(let x = 0; x < database.length; x++){
-        if(user === database[x].userName && userPass === database[x].password){
+        if(user === database[x].userName && +userPass === database[x].password){
             alert("Welcome back " + user);
             let message = prompt("What would you like to say to your fans?");
             timeline.push(message);
@@ -112,7 +112,19 @@ const signIn = (user, userPass) => {
 signIn(userprompt, userPassprompt);
 
 
+/* Ok there was an issue with this code.
+The is was I have the password as a number, but what ever the user inputs becomes a string.
+So even tho the password in the database is equal to a number, when the user inputs the number,
+it's value turns into a string. So their password would never be right. 
 
+Some of the guys on discord recommended that the passwords should be strings, since user
+usually have characters in their passwords.
+
+How I fixed this was by adding a "+" infront of the next condition. This turns the password
+into a number.
+WOW I became better.
+
+*/
 
 
 
