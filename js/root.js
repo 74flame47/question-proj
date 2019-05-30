@@ -128,8 +128,32 @@ WOW I became better.
 
 
 
+//I want to be able to add classes to certain feilds so have them respond when A mouse enters and leaves.
 
 
+let choice0 = document.getElementById("choice0");
+let choice1 = document.getElementById("choice1");
+let choice2 = document.getElementById("choice2");
+let choice3 = document.getElementById("choice3");
+
+let mainBG = document.getElementById("main-container");
+
+
+choice0.addEventListener("click", function(){
+    mainBG.style.backgroundImage = 'URL("/images/bg.jpg")';
+});
+
+choice1.addEventListener("click", function() {
+    mainBG.style.backgroundImage = "url('/images/bg1.png')";
+});
+
+choice2.addEventListener("click", function() {
+    mainBG.style.backgroundImage = "url('/images/bg2.png')";
+});
+
+choice3.addEventListener("click", function () {
+    mainBG.style.backgroundImage = "url('/images/bg3.png')";
+});
 
 
 
