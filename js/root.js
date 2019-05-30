@@ -64,7 +64,7 @@ let newsfeed = [
 
 
 
-
+/*
 
 //This stores the user information. If they are apart of the site, then they will be here
 let database = [
@@ -112,7 +112,7 @@ const signIn = (user, userPass) => {
 signIn(userprompt, userPassprompt);
 
 
-/* Ok there was an issue with this code.
+ Ok there was an issue with this code.
 The is was I have the password as a number, but what ever the user inputs becomes a string.
 So even tho the password in the database is equal to a number, when the user inputs the number,
 it's value turns into a string. So their password would never be right. 
@@ -131,28 +131,44 @@ WOW I became better.
 //I want to be able to add classes to certain feilds so have them respond when A mouse enters and leaves.
 
 
-let choice0 = document.getElementById("choice0");
-let choice1 = document.getElementById("choice1");
-let choice2 = document.getElementById("choice2");
-let choice3 = document.getElementById("choice3");
+let bgA = document.querySelector(".bg-0");
+let bgB = document.querySelector(".bg-1");
+let bgC = document.querySelector(".bg-2");
+let bgD = document.querySelector(".bg-3");
 
 let mainBG = document.getElementById("main-container");
 
 
-choice0.addEventListener("click", function(){
+bgA.addEventListener("click", function(){
     mainBG.style.backgroundImage = 'URL("/images/bg.jpg")';
+    bgA.classList.add("nav-active");
+    bgB.classList.remove("nav-active");
+    bgC.classList.remove("nav-active");
+    bgD.classList.remove("nav-active");
 });
 
-choice1.addEventListener("click", function() {
+bgB.addEventListener("click", function() {
     mainBG.style.backgroundImage = "url('/images/bg1.png')";
+    bgA.classList.remove("nav-active");
+    bgB.classList.add("nav-active");
+    bgC.classList.remove("nav-active");
+    bgD.classList.remove("nav-active");
 });
 
-choice2.addEventListener("click", function() {
+bgC.addEventListener("click", function() {
     mainBG.style.backgroundImage = "url('/images/bg2.png')";
+    bgA.classList.remove("nav-active");
+    bgB.classList.remove("nav-active");
+    bgC.classList.add("nav-active");
+    bgD.classList.remove("nav-active");
 });
 
-choice3.addEventListener("click", function () {
+bgD.addEventListener("click", function () {
     mainBG.style.backgroundImage = "url('/images/bg3.png')";
+    bgA.classList.remove("nav-active");
+    bgB.classList.remove("nav-active");
+    bgC.classList.remove("nav-active");
+    bgD.classList.add("nav-active");
 });
 
 

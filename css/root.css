@@ -30,6 +30,77 @@ body{
     transition: 1s;
 }
 
+#nav-bar{
+    width: 100%;
+    display: block;
+    min-height: 75px;
+    background-color: rgba(0, 0, 0, .7);
+    color: #ffffff;
+}
+
+.nav-title{
+    font-family: "Comfortaa";
+    min-width: 100px;
+    font-size: 22px;
+    border: 1px dashed #ffb70b;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.bg-img-container{
+    max-width: 475px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    list-style-type: none;
+    position: relative;
+}
+
+
+.bg-img-container li{
+    margin: 15px 10px;
+    padding: 5px 30px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    border-radius: 40px;
+    filter: contrast(200%) grayscale(100%);
+    opacity: .6;
+    transition: .5s;
+}
+
+.bg-0{
+    background-image: url("/images/bg-icon.png");
+}
+.bg-1{
+    background-image: url("/images/bg1-icon.png");
+}
+.bg-2{
+    background-image: url("/images/bg2-icon.png");
+}
+.bg-3{
+    background-image: url("/images/bg3-icon.png");
+}
+
+
+.bg-img-container li:hover{
+    filter: contrast(100%) grayscale(0%);
+    opacity: 1;
+}
+
+
+.nav-active{
+    filter: contrast(100%) grayscale(0%) !important;
+    opacity: 1 !important;
+}
+
+
+
+
+
+
 
 
 
@@ -47,8 +118,13 @@ body{
 
 
 
+/*================================================================================================
+====QUESTIONS CONTAINER===========================================================================
+================================================================================================*/
 
-
+#questions-test-container{
+    display: none;
+}
 
 /*=======================Copy Section===========================*/
 
@@ -178,8 +254,6 @@ body{
 
 
 
-
-
 .select-btn:hover{
     box-shadow:0px 0px 20px 1px #02b294;
     max-width:370px;
@@ -199,6 +273,9 @@ body{
 /*=======================Questions Section END===========================*/
 
 
+/*================================================================================================
+====QUESTIONS CONTAINER=END=======================================================================
+================================================================================================*/
 
 
 
@@ -209,6 +286,26 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+/*================================================================================================
+====LIST CREATION CONTAINER=======================================================================
+================================================================================================*/
+
+
+
+
+/*================================================================================================
+====LIST CREATION CONTAINER=END===================================================================
+================================================================================================*/
 
 
 
