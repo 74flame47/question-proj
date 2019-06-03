@@ -139,7 +139,7 @@ let bgD = document.querySelector(".bg-3");
 let mainBG = document.getElementById("main-container");
 
 
-bgA.addEventListener("click", function(){
+bgA.addEventListener("click", function() {
     mainBG.style.backgroundImage = 'URL("/images/bg.jpg")';
     bgA.classList.add("nav-active");
     bgB.classList.remove("nav-active");
@@ -163,7 +163,7 @@ bgC.addEventListener("click", function() {
     bgD.classList.remove("nav-active");
 });
 
-bgD.addEventListener("click", function () {
+bgD.addEventListener("click", function() {
     mainBG.style.backgroundImage = "url('/images/bg3.png')";
     bgA.classList.remove("nav-active");
     bgB.classList.remove("nav-active");
@@ -174,33 +174,38 @@ bgD.addEventListener("click", function () {
 
 
 
+/*
+<ul id="myList">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ul>
+
+<p>Click the button to append an item to the end of the list.</p>
+
+<button onclick="myFunction()">Try it</button>
 
 
+<script>
+function myFunction() {
+  var node = document.createElement("LI");
+  var textnode = document.createTextNode("Water");
+  node.appendChild(textnode);
+  document.getElementById("myList").appendChild(node);
+}
+</script>
 
 
+////////////////////BREAK DOWN////////////////////////////////////////
 
 
+var node = document.createElement("LI");                 // Create a <li> node
+var textnode = document.createTextNode("Water");         // Create a text node
+node.appendChild(textnode);                              // Append the text to <li>
+document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with id="myList"
 
+How is .createTextNode("Copy"); different from .innerHTML("");
 
+*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let box = document.querySelector(".box");
+box.innerHTML = "< p > asd < /p>";

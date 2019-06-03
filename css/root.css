@@ -1,46 +1,50 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
+html {
     margin: 0px;
     padding: 0px;
-    
 }
 
-body{
+body {
     margin: 0px;
     padding: 0px;
 }
+
 
 /* width */
+
 ::-webkit-scrollbar {
     width: 20px;
     opacity: 0;
 }
 
+
 /* Track */
+
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
     opacity: 0;
 }
+
 
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
     opacity: 0;
 }
+
 
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
     opacity: 0;
 }
 
-
-
-
-#main-container{
+#main-container {
     width: 100%;
     min-height: 670px;
     height: 100%;
@@ -52,7 +56,7 @@ body{
     transition: 1s;
 }
 
-#nav-bar{
+#nav-bar {
     width: 100%;
     display: block;
     min-height: 75px;
@@ -61,17 +65,17 @@ body{
     /*position: absolute;   For some reason THIS  messes with the javascript code...*/
 }
 
-.nav-title{
+.nav-title {
     font-family: "Comfortaa";
     min-width: 100px;
     font-size: 22px;
-    //border: 1px dashed #ffb70b;
+    /*border: 1px dashed #ffb70b;*/
     position: absolute;
     top: 25px;
     left: 25px;
 }
 
-.bg-img-container{
+.bg-img-container {
     max-width: 475px;
     margin: 0 auto;
     padding: 0;
@@ -82,8 +86,7 @@ body{
     position: relative;
 }
 
-
-.bg-img-container li{
+.bg-img-container li {
     margin: 15px 10px;
     padding: 5px 30px;
     border: 2px solid #ffffff;
@@ -94,40 +97,33 @@ body{
     transition: .5s;
 }
 
-.bg-0{
+.bg-0 {
     background-image: url("/images/bg-icon.png");
 }
-.bg-1{
+
+.bg-1 {
     background-image: url("/images/bg1-icon.png");
 }
-.bg-2{
+
+.bg-2 {
     background-image: url("/images/bg2-icon.png");
 }
-.bg-3{
+
+.bg-3 {
     background-image: url("/images/bg3-icon.png");
 }
 
-
-.bg-img-container li:hover{
+.bg-img-container li:hover {
     filter: contrast(100%) grayscale(0%);
     opacity: 1;
 }
 
-
-.nav-active{
+.nav-active {
     filter: contrast(100%) grayscale(0%) !important;
     opacity: 1 !important;
 }
 
-
-
-
-
-
-
-
-
-#content-container{
+#content-container {
     max-width: 1200px;
     min-height: 670px;
     margin: 0px auto;
@@ -136,57 +132,20 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*================================================================================================
 ====QUESTIONS CONTAINER===========================================================================
 ================================================================================================*/
 
-#questions-test-container{
+#questions-test-container {
     display: none;
 }
 
+
 /*=======================Copy Section===========================*/
 
-
-
-
-#copy-container{
+#copy-container {
     width: 500px;
-    height:500px;
+    height: 500px;
     position: absolute;
     /*border: 1px solid #ffffff;*/
     color: #ffffff;
@@ -194,49 +153,45 @@ body{
     left: 5%;
 }
 
-#copy-container img{
+#copy-container img {
     max-width: 340px;
     margin: 0px auto;
     display: block;
     /*border: 1px solid #ffffff;*/
 }
-#copy-container h1{
+
+#copy-container h1 {
     font-family: "Comfortaa", sans-serif;
     font-size: 80px;
     font-weight: 500;
     /*border: 1px solid #ffffff;*/
     margin: 20px 0px 0px 0px;
 }
-#copy-container p{
+
+#copy-container p {
     font-family: "Tajawal", sans-serif;
     font-size: 25px;
     font-weight: 700;
     /*border: 2px solid #0cdd63;*/
     margin: -20px 0px 0px 0px;
     text-align: right;
-    padding-right:20px;
+    padding-right: 20px;
     letter-spacing: 3px;
 }
+
 
 /*=======================Copy Section END===========================*/
 
 
-
-
-
-
-
-
-
 /*=======================Questions Section===========================*/
 
-#questions-container{
+#questions-container {
     min-width: 300px;
-    width:40%;
+    width: 40%;
     max-width: 500px;
     min-height: 500px;
-    margin:0px;
-    padding:27px 27px 47px 27px;
+    margin: 0px;
+    padding: 27px 27px 47px 27px;
     position: absolute;
     top: 20%;
     right: 7%;
@@ -248,7 +203,7 @@ body{
     border-bottom-right-radius: 70px;
 }
 
-#questions-container h3{
+#questions-container h3 {
     text-align: right;
     margin: 0px;
     padding: 0px 20px 0px 0px;
@@ -258,7 +213,7 @@ body{
     /*border: 2px solid #0cdd63;*/
 }
 
-#questions-container h4{
+#questions-container h4 {
     text-align: center;
     margin: 0px;
     padding: 30px 0px 10px 0px;
@@ -268,19 +223,20 @@ body{
     /*border: 2px solid #0cdd63;*/
 }
 
-
-.select-btn{
-    max-width:360px;
+.select-btn {
+    max-width: 360px;
     height: 50px;
     margin: 16px auto;
     padding: 0px;
     border-radius: 70px;
     background-color: rgba(0, 0, 0, .4);
-    transition: .45s; /*This simple transition effect made a
+    transition: .45s;
+    /*This simple transition effect made a
     complete differenc in everything. It smooths everything out!!!*/
 }
-.option{
-    width:50px;
+
+.option {
+    width: 50px;
     height: 50px;
     text-align: center;
     font-family: "Tajawal", sans-serif;
@@ -292,7 +248,7 @@ body{
     transition: .45s;
 }
 
-.select-btn p{
+.select-btn p {
     width: 100%;
     height: 50px;
     text-align: center;
@@ -306,24 +262,24 @@ body{
     transition: .45s;
 }
 
-
-
-.select-btn:hover{
-    box-shadow:0px 0px 20px 1px #02b294;
-    max-width:370px;
+.select-btn:hover {
+    box-shadow: 0px 0px 20px 1px #02b294;
+    max-width: 370px;
     height: 60px;
     cursor: pointer;
 }
 
-.select-btn p:hover{
+.select-btn p:hover {
     color: #ffb70b;
     font-size: 22px;
 }
 
-.option:hover{
+.option:hover {
     color: #ffb70b;
     font-size: 22px;
 }
+
+
 /*=======================Questions Section END===========================*/
 
 
@@ -332,102 +288,48 @@ body{
 ================================================================================================*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*================================================================================================
 ====LIST CREATION CONTAINER=======================================================================
 ================================================================================================*/
 
-#list-content-container{
+#list-content-container {
     color: #ffffff;
     font-family: "Comfortaa", sans-serif;
-    //border: 1px dashed #cccccc;
+    /*border: 1px dashed #cccccc;*/
     width: 100%;
     min-height: 300px;
 }
 
-#list-header{
+#list-header {
     width: 100%;
-    //border: 2px solid #000000;
+    /*border: 2px solid #000000;*/
 }
-#list-header h1{
+
+#list-header h1 {
     font-size: 47px;
     text-align: center;
     padding-top: 20%;
-    margin:  0px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
 }
 
-
-
-#input-container{
-    //border: 3px dashed #02b294;
+#input-container {
+    /*border: 3px dashed #02b294;*/
     text-align: center;
 }
 
-#input-container input{
-  width: 60%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  font-size: 18px;
-  font-family: "Tajawal", sans-serif;
-  font-weight: 900;
+#input-container input {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 900;
 }
 
-
-
-
-
-
-
-#input-container button{
+#input-container button {
     background-image: linear-gradient(to bottom right, #363636, #272727);
     text-align: center;
     color: #ffffff;
@@ -440,37 +342,32 @@ body{
     transition: .3s;
 }
 
-
-#input-container button:hover{
+#input-container button:hover {
     color: #ffb70b;
     cursor: pointer;
 }
 
-
-
-#box-section{
+#box-section {
     padding-top: 10px;
     max-height: 400px;
     color: #949494;
-    //background-color: rgba(27, 27, 27, .5);
-    //border: 3px solid #ffb70b;
+    /*background-color: rgba(27, 27, 27, .5);*/
+    /*border: 3px solid #ffb70b;*/
     border-radius: 5px;
     max-width: 900px;
     margin: 50px auto;
     overflow-y: scroll;
     scroll-behavior: smooth;
-
 }
 
-
-.box{
+.box {
     width: 150px;
     height: 150px;
-    padding:15px;
+    padding: 15px;
     margin: 7px;
     display: inline-block;
     background-color: #ffffff;
-    //border: 2px solid #585858;
+    /*border: 2px solid #585858;*/
     border-radius: 9px;
     font-size: 120px;
     text-align: center;
@@ -478,25 +375,13 @@ body{
     transition: .3s;
 }
 
-
-
-.box:hover{
+.box:hover {
     color: #272727;
-    box-shadow:0px 0px 20px 1px #02b294;
+    box-shadow: 0px 0px 20px 1px #02b294;
     cursor: pointer;
 }
-
-
 
 
 /*================================================================================================
 ====LIST CREATION CONTAINER=END===================================================================
 ================================================================================================*/
-
-
-
-
-
-
-
-
