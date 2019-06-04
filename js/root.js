@@ -205,7 +205,23 @@ document.getElementById("myList").appendChild(node);     // Append <li> to <ul> 
 
 How is .createTextNode("Copy"); different from .innerHTML("");
 
-*/
 
 let box = document.querySelector(".box");
-box.innerHTML = "< p > asd < /p>";
+box.innerHTML = "a";
+*/
+
+
+
+
+
+
+let color1 = document.querySelector(".color1");
+let color2 = document.querySelector(".color2");
+
+const gradientBG = () => {
+    mainBG.style.backgroundImage = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+}
+
+color1.addEventListener("input", gradientBG); //I can create functions and add them as an input function for the event handlers
+
+color2.addEventListener("input", gradientBG);
